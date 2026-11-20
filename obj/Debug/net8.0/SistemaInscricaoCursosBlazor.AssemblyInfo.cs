@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaInscricaoCursosBlazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+738f16a10930bcbcf14a9178e9bdccfd267b57b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaInscricaoCursosBlazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaInscricaoCursosBlazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

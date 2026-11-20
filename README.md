@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SistemaInscricaoCursosBlazor
 
 Projeto acadêmico de uma página interativa de inscrição em cursos, desenvolvido com Blazor Web App e C#.
@@ -68,3 +69,6 @@ Substitua `SEU-USUARIO` pelo seu usuário do GitHub.
 ## Observação
 
 O `Task.Delay(2000)` simula o tempo de uma requisição assíncrona. O projeto não grava os dados em banco de dados nem envia e-mail; isso não foi solicitado no enunciado.
+=======
+# sistema-inscricao-cursos-blazor
+>>>>>>> 4f33e8e533209ac5cad4688c824cc1b8f1bf3dc5
