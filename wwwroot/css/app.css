@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root {
+    font-family: 'DM Sans', sans-serif;
+    color: #202333;
+    background: #f5f6fb;
+    font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: #f5f6fb;
+}
+
+.topbar {
+    height: 76px;
+    background: #fff;
+    border-bottom: 1px solid #e9eaf1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-content {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    color: #202333;
+    text-decoration: none;
+    font: 800 22px 'Manrope', sans-serif;
+    letter-spacing: -1px;
+}
+
+.brand span { color: #6c55d9; }
+
+.nav-link {
+    color: #5e50b8;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main { min-height: calc(100vh - 140px); }
+
+.hero {
+    width: min(1100px, calc(100% - 40px));
+    min-height: 570px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-content h1, .form-heading h1 {
+    font: 800 clamp(32px, 5vw, 48px) 'Manrope', sans-serif;
+    letter-spacing: -2px;
+    margin: 12px 0;
+}
+
+.hero-content p, .form-heading p {
+    color: #74788b;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.eyebrow {
+    color: #6c55d9;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.primary-link, .submit-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 10px;
+    background: #6c55d9;
+    color: white;
+    padding: 14px 22px;
+    font: 700 15px 'DM Sans', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .2s, transform .2s;
+}
+
+.primary-link { margin-top: 18px; }
+.primary-link:hover, .submit-button:hover:not(:disabled) {
+    background: #5741c2;
+    transform: translateY(-1px);
+}
+
+.hero-card {
+    padding: 42px;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #6c55d9, #40328f);
+    color: white;
+    box-shadow: 0 24px 60px #44358d30;
+}
+
+.hero-icon { font-size: 42px; }
+.hero-card h2 { font: 700 25px 'Manrope', sans-serif; }
+.hero-card p { color: #e4dfff; line-height: 1.7; }
+
+.page-container {
+    width: min(680px, calc(100% - 32px));
+    margin: 48px auto;
+}
+
+.form-card {
+    background: #fff;
+    border: 1px solid #ececf3;
+    border-radius: 20px;
+    padding: 38px;
+    box-shadow: 0 16px 50px #25234b0b;
+}
+
+.form-heading { margin-bottom: 28px; }
+.form-heading h1 { font-size: 30px; letter-spacing: -1px; }
+
+.form-group { margin-bottom: 20px; }
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    border: 1px solid #dfe1eb;
+    border-radius: 9px;
+    padding: 12px 14px;
+    color: #202333;
+    background: #fff;
+    font: 15px 'DM Sans', sans-serif;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #806ce3;
+    box-shadow: 0 0 0 3px #806ce31c;
+}
+
+.validation-message {
+    display: block;
+    margin-top: 6px;
+    color: #c03950;
+    font-size: 13px;
+}
+
+.validation-summary {
+    color: #b83248;
+    background: #fff2f3;
+    border-radius: 9px;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+}
+
+.validation-summary:empty { display: none; }
+
+.submit-button { width: 100%; min-height: 50px; margin-top: 5px; }
+.submit-button:disabled { opacity: .65; cursor: wait; }
+
+.status-message {
+    text-align: center;
+    font-size: 14px;
+    margin: 14px 0 0;
+}
+
+.processing { color: #6c55d9; }
+
+.success-message {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 18px;
+    padding: 15px;
+    color: #176b43;
+    background: #eaf8f0;
+    border: 1px solid #ccebd9;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+footer {
+    padding: 24px 16px;
+    text-align: center;
+    color: #9295a5;
+    font-size: 13px;
+}
+
+@media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; padding: 55px 0; gap: 30px; }
+    .hero-card { padding: 30px; }
+    .form-card { padding: 25px 20px; }
+    .page-container { margin: 28px auto; }
+}
